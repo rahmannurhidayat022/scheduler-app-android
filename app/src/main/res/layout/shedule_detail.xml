@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Dasboard">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:background="@drawable/bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:gravity="right"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+            <TextView
+                    android:gravity="left"
+                    android:textColor="#eee"
+                    android:textStyle="bold"
+                    android:textSize="30sp"
+                    android:text="Schedule Detail"
+                    android:layout_width="320dp" android:layout_height="match_parent"></TextView>
+
+            <ImageButton
+                    android:src="@drawable/exit"
+                    android:layout_width="50dp" android:layout_height="match_parent"></ImageButton>
+        </LinearLayout>
+
+        <LinearLayout
+                android:paddingLeft="30dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+            <Button
+                    android:layout_gravity="center_vertical"
+                    android:text="Back"
+                    android:background="@drawable/btn_secondary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:padding="10dp"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:background="@drawable/bg_dashboard"
+                android:layout_width="370dp"
+                android:layout_height="400dp">
+            <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                <TextView
+                        android:textSize="18sp"
+                        android:text="Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:id="@+id/title"
+                        android:textSize="18sp"
+                        android:text=" : Isi Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                <TextView
+                        android:textSize="18sp"
+                        android:text="Date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:id="@+id/date"
+                        android:textSize="18sp"
+                        android:text=" : Isi Date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                <TextView
+                        android:textSize="18sp"
+                        android:text="Description: "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <TextView
+                    android:id="@+id/deskripsi"
+                    android:textSize="18sp"
+                    android:text="Isi Description kegiatan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+        <Button
+                android:id="@+id/sign_button"
+                android:text="Delete Schedule"
+                android:textSize="20sp"
+                android:textColor="#eee"
+                android:background="@drawable/btn_delete"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="350dp"
+                android:layout_height="80dp">
+
+        </Button>
+
+    </LinearLayout>
+
+</RelativeLayout>

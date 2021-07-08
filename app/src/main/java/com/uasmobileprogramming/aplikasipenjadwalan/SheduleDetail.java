@@ -1,0 +1,13 @@
+package com.uasmobileprogramming.aplikasipenjadwalan;
+
+import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class SheduleDetail extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.shedule_detail);
+    }
+}
